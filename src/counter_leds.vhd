@@ -73,4 +73,5 @@ begin
 		end case;
 	end process FSM;
 end architecture beh;
+-------------------------------------------------------------------------------
 			
