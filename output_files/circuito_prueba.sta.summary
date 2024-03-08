@@ -2,40 +2,52 @@
 Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1200mV 85C Model Setup 'CLK'
-Slack : 0.230
+Type  : Slow 1200mV 85C Model Setup 'RELOG25HZ|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 78.277
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'CLK'
-Slack : 0.358
+Type  : Slow 1200mV 85C Model Hold 'RELOG25HZ|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.371
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLK'
-Slack : -3.000
-TNS   : -7.000
-
-Type  : Slow 1200mV 0C Model Setup 'CLK'
-Slack : 0.310
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLK_50HZ'
+Slack : 9.834
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'CLK'
-Slack : 0.312
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'RELOG25HZ|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 39.753
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLK'
-Slack : -3.000
-TNS   : -7.000
-
-Type  : Fast 1200mV 0C Model Setup 'CLK'
-Slack : 0.568
+Type  : Slow 1200mV 0C Model Setup 'RELOG25HZ|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 78.457
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'CLK'
-Slack : 0.187
+Type  : Slow 1200mV 0C Model Hold 'RELOG25HZ|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.331
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLK'
-Slack : -3.000
-TNS   : -7.224
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLK_50HZ'
+Slack : 9.817
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'RELOG25HZ|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 39.747
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'RELOG25HZ|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 78.995
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'RELOG25HZ|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.194
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLK_50HZ'
+Slack : 9.584
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'RELOG25HZ|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 39.783
+TNS   : 0.000
 
 ------------------------------------------------------------

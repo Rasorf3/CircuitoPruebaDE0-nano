@@ -1,16 +1,16 @@
-Fitter Status : Successful - Wed Dec 13 13:54:48 2023
+Fitter Status : Successful - Wed Jan 24 10:55:49 2024
 Quartus Prime Version : 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 Revision Name : circuito_prueba
-Top-level Entity Name : contador_botones
+Top-level Entity Name : circuito_prueba
 Family : Cyclone IV E
 Device : EP4CE22F17C6
 Timing Models : Final
-Total logic elements : 6 / 22,320 ( < 1 % )
-    Total combinational functions : 6 / 22,320 ( < 1 % )
-    Dedicated logic registers : 4 / 22,320 ( < 1 % )
-Total registers : 4
-Total pins : 5 / 154 ( 3 % )
+Total logic elements : 35 / 22,320 ( < 1 % )
+    Total combinational functions : 29 / 22,320 ( < 1 % )
+    Dedicated logic registers : 28 / 22,320 ( < 1 % )
+Total registers : 28
+Total pins : 81 / 154 ( 53 % )
 Total virtual pins : 0
 Total memory bits : 0 / 608,256 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
-Total PLLs : 0 / 4 ( 0 % )
+Total PLLs : 1 / 4 ( 25 % )

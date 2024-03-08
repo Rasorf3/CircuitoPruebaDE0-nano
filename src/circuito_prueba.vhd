@@ -5,6 +5,8 @@ use IEEE.std_logic_1164.all;
 entity circuito_prueba is
 port(
 		CLK_50HZ : in std_logic;
+		botones : in std_logic_vector(1 downto 0);
+		SWT : in std_logic_vector(13 downto 0);
 		hex00,hex01,hex02,hex03,hex04,hex05,hex06,hex07 : out std_logic_vector(6 downto 0);
 		leds : out std_logic_vector(7 downto 0)
 		);

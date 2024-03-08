@@ -1,10 +1,627 @@
-|contador_botones
+|circuito_prueba
+CLK_50HZ => pll_medio:RELOG25HZ.inclk0
+botones[0] => ~NO_FANOUT~
+botones[1] => ~NO_FANOUT~
+SWT[0] => ~NO_FANOUT~
+SWT[1] => ~NO_FANOUT~
+SWT[2] => ~NO_FANOUT~
+SWT[3] => ~NO_FANOUT~
+SWT[4] => ~NO_FANOUT~
+SWT[5] => ~NO_FANOUT~
+SWT[6] => ~NO_FANOUT~
+SWT[7] => ~NO_FANOUT~
+SWT[8] => ~NO_FANOUT~
+SWT[9] => ~NO_FANOUT~
+SWT[10] => ~NO_FANOUT~
+SWT[11] => ~NO_FANOUT~
+SWT[12] => ~NO_FANOUT~
+SWT[13] => ~NO_FANOUT~
+hex00[0] <= contador_hex:hex0.hex[0]
+hex00[1] <= contador_hex:hex0.hex[1]
+hex00[2] <= contador_hex:hex0.hex[2]
+hex00[3] <= contador_hex:hex0.hex[3]
+hex00[4] <= contador_hex:hex0.hex[4]
+hex00[5] <= contador_hex:hex0.hex[5]
+hex00[6] <= contador_hex:hex0.hex[6]
+hex01[0] <= contador_hex:hex1.hex[0]
+hex01[1] <= contador_hex:hex1.hex[1]
+hex01[2] <= contador_hex:hex1.hex[2]
+hex01[3] <= contador_hex:hex1.hex[3]
+hex01[4] <= contador_hex:hex1.hex[4]
+hex01[5] <= contador_hex:hex1.hex[5]
+hex01[6] <= contador_hex:hex1.hex[6]
+hex02[0] <= contador_hex:hex2.hex[0]
+hex02[1] <= contador_hex:hex2.hex[1]
+hex02[2] <= contador_hex:hex2.hex[2]
+hex02[3] <= contador_hex:hex2.hex[3]
+hex02[4] <= contador_hex:hex2.hex[4]
+hex02[5] <= contador_hex:hex2.hex[5]
+hex02[6] <= contador_hex:hex2.hex[6]
+hex03[0] <= contador_hex:hex3.hex[0]
+hex03[1] <= contador_hex:hex3.hex[1]
+hex03[2] <= contador_hex:hex3.hex[2]
+hex03[3] <= contador_hex:hex3.hex[3]
+hex03[4] <= contador_hex:hex3.hex[4]
+hex03[5] <= contador_hex:hex3.hex[5]
+hex03[6] <= contador_hex:hex3.hex[6]
+hex04[0] <= contador_hex:hex4.hex[0]
+hex04[1] <= contador_hex:hex4.hex[1]
+hex04[2] <= contador_hex:hex4.hex[2]
+hex04[3] <= contador_hex:hex4.hex[3]
+hex04[4] <= contador_hex:hex4.hex[4]
+hex04[5] <= contador_hex:hex4.hex[5]
+hex04[6] <= contador_hex:hex4.hex[6]
+hex05[0] <= contador_hex:hex5.hex[0]
+hex05[1] <= contador_hex:hex5.hex[1]
+hex05[2] <= contador_hex:hex5.hex[2]
+hex05[3] <= contador_hex:hex5.hex[3]
+hex05[4] <= contador_hex:hex5.hex[4]
+hex05[5] <= contador_hex:hex5.hex[5]
+hex05[6] <= contador_hex:hex5.hex[6]
+hex06[0] <= contador_hex:hex6.hex[0]
+hex06[1] <= contador_hex:hex6.hex[1]
+hex06[2] <= contador_hex:hex6.hex[2]
+hex06[3] <= contador_hex:hex6.hex[3]
+hex06[4] <= contador_hex:hex6.hex[4]
+hex06[5] <= contador_hex:hex6.hex[5]
+hex06[6] <= contador_hex:hex6.hex[6]
+hex07[0] <= contador_hex:hex7.hex[0]
+hex07[1] <= contador_hex:hex7.hex[1]
+hex07[2] <= contador_hex:hex7.hex[2]
+hex07[3] <= contador_hex:hex7.hex[3]
+hex07[4] <= contador_hex:hex7.hex[4]
+hex07[5] <= contador_hex:hex7.hex[5]
+hex07[6] <= contador_hex:hex7.hex[6]
+leds[0] <= counter_leds:FSM_LEDS.leds[0]
+leds[1] <= counter_leds:FSM_LEDS.leds[1]
+leds[2] <= counter_leds:FSM_LEDS.leds[2]
+leds[3] <= counter_leds:FSM_LEDS.leds[3]
+leds[4] <= counter_leds:FSM_LEDS.leds[4]
+leds[5] <= counter_leds:FSM_LEDS.leds[5]
+leds[6] <= counter_leds:FSM_LEDS.leds[6]
+leds[7] <= counter_leds:FSM_LEDS.leds[7]
+
+
+|circuito_prueba|PLL_MEDIO:RELOG25HZ
+inclk0 => altpll:altpll_component.inclk[0]
+c0 <= altpll:altpll_component.clk[0]
+
+
+|circuito_prueba|PLL_MEDIO:RELOG25HZ|altpll:altpll_component
+inclk[0] => PLL_MEDIO_altpll:auto_generated.inclk[0]
+inclk[1] => PLL_MEDIO_altpll:auto_generated.inclk[1]
+fbin => ~NO_FANOUT~
+pllena => ~NO_FANOUT~
+clkswitch => ~NO_FANOUT~
+areset => ~NO_FANOUT~
+pfdena => ~NO_FANOUT~
+clkena[0] => ~NO_FANOUT~
+clkena[1] => ~NO_FANOUT~
+clkena[2] => ~NO_FANOUT~
+clkena[3] => ~NO_FANOUT~
+clkena[4] => ~NO_FANOUT~
+clkena[5] => ~NO_FANOUT~
+extclkena[0] => ~NO_FANOUT~
+extclkena[1] => ~NO_FANOUT~
+extclkena[2] => ~NO_FANOUT~
+extclkena[3] => ~NO_FANOUT~
+scanclk => ~NO_FANOUT~
+scanclkena => ~NO_FANOUT~
+scanaclr => ~NO_FANOUT~
+scanread => ~NO_FANOUT~
+scanwrite => ~NO_FANOUT~
+scandata => ~NO_FANOUT~
+phasecounterselect[0] => ~NO_FANOUT~
+phasecounterselect[1] => ~NO_FANOUT~
+phasecounterselect[2] => ~NO_FANOUT~
+phasecounterselect[3] => ~NO_FANOUT~
+phaseupdown => ~NO_FANOUT~
+phasestep => ~NO_FANOUT~
+configupdate => ~NO_FANOUT~
+fbmimicbidir <> <GND>
+clk[0] <= clk[0].DB_MAX_OUTPUT_PORT_TYPE
+clk[1] <= clk[1].DB_MAX_OUTPUT_PORT_TYPE
+clk[2] <= clk[2].DB_MAX_OUTPUT_PORT_TYPE
+clk[3] <= clk[3].DB_MAX_OUTPUT_PORT_TYPE
+clk[4] <= clk[4].DB_MAX_OUTPUT_PORT_TYPE
+extclk[0] <= <GND>
+extclk[1] <= <GND>
+extclk[2] <= <GND>
+extclk[3] <= <GND>
+clkbad[0] <= <GND>
+clkbad[1] <= <GND>
+enable1 <= <GND>
+enable0 <= <GND>
+activeclock <= <GND>
+clkloss <= <GND>
+locked <= <GND>
+scandataout <= <GND>
+scandone <= <GND>
+sclkout0 <= <GND>
+sclkout1 <= <GND>
+phasedone <= <GND>
+vcooverrange <= <GND>
+vcounderrange <= <GND>
+fbout <= <GND>
+fref <= <GND>
+icdrclk <= <GND>
+
+
+|circuito_prueba|PLL_MEDIO:RELOG25HZ|altpll:altpll_component|PLL_MEDIO_altpll:auto_generated
+clk[0] <= pll1.CLK
+clk[1] <= pll1.CLK1
+clk[2] <= pll1.CLK2
+clk[3] <= pll1.CLK3
+clk[4] <= pll1.CLK4
+inclk[0] => pll1.CLK
+inclk[1] => pll1.CLK1
+
+
+|circuito_prueba|contador_hex:hex0
+CLK => counter_15:COUNTER.CLK
+hex[0] <= bch:BCH.display[0]
+hex[1] <= bch:BCH.display[1]
+hex[2] <= bch:BCH.display[2]
+hex[3] <= bch:BCH.display[3]
+hex[4] <= bch:BCH.display[4]
+hex[5] <= bch:BCH.display[5]
+hex[6] <= bch:BCH.display[6]
+
+
+|circuito_prueba|contador_hex:hex0|counter_15:COUNTER
 CLK => PS~1.DATAIN
-SW[0] => Equal0.IN1
-SW[0] => Equal1.IN0
-SW[1] => Equal0.IN0
-SW[1] => Equal1.IN1
-S[0] <= S.DB_MAX_OUTPUT_PORT_TYPE
-S[1] <= S.DB_MAX_OUTPUT_PORT_TYPE
+dato[0] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+dato[1] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+dato[2] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+dato[3] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|circuito_prueba|contador_hex:hex0|BCH:BCH
+dato[0] => Mux0.IN19
+dato[0] => Mux1.IN19
+dato[0] => Mux2.IN19
+dato[0] => Mux3.IN19
+dato[0] => Mux4.IN19
+dato[0] => Mux5.IN19
+dato[0] => Mux6.IN19
+dato[1] => Mux0.IN18
+dato[1] => Mux1.IN18
+dato[1] => Mux2.IN18
+dato[1] => Mux3.IN18
+dato[1] => Mux4.IN18
+dato[1] => Mux5.IN18
+dato[1] => Mux6.IN18
+dato[2] => Mux0.IN17
+dato[2] => Mux1.IN17
+dato[2] => Mux2.IN17
+dato[2] => Mux3.IN17
+dato[2] => Mux4.IN17
+dato[2] => Mux5.IN17
+dato[2] => Mux6.IN17
+dato[3] => Mux0.IN16
+dato[3] => Mux1.IN16
+dato[3] => Mux2.IN16
+dato[3] => Mux3.IN16
+dato[3] => Mux4.IN16
+dato[3] => Mux5.IN16
+dato[3] => Mux6.IN16
+display[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+display[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+display[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+display[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+display[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+display[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+display[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|circuito_prueba|contador_hex:hex1
+CLK => counter_15:COUNTER.CLK
+hex[0] <= bch:BCH.display[0]
+hex[1] <= bch:BCH.display[1]
+hex[2] <= bch:BCH.display[2]
+hex[3] <= bch:BCH.display[3]
+hex[4] <= bch:BCH.display[4]
+hex[5] <= bch:BCH.display[5]
+hex[6] <= bch:BCH.display[6]
+
+
+|circuito_prueba|contador_hex:hex1|counter_15:COUNTER
+CLK => PS~1.DATAIN
+dato[0] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+dato[1] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+dato[2] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+dato[3] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|circuito_prueba|contador_hex:hex1|BCH:BCH
+dato[0] => Mux0.IN19
+dato[0] => Mux1.IN19
+dato[0] => Mux2.IN19
+dato[0] => Mux3.IN19
+dato[0] => Mux4.IN19
+dato[0] => Mux5.IN19
+dato[0] => Mux6.IN19
+dato[1] => Mux0.IN18
+dato[1] => Mux1.IN18
+dato[1] => Mux2.IN18
+dato[1] => Mux3.IN18
+dato[1] => Mux4.IN18
+dato[1] => Mux5.IN18
+dato[1] => Mux6.IN18
+dato[2] => Mux0.IN17
+dato[2] => Mux1.IN17
+dato[2] => Mux2.IN17
+dato[2] => Mux3.IN17
+dato[2] => Mux4.IN17
+dato[2] => Mux5.IN17
+dato[2] => Mux6.IN17
+dato[3] => Mux0.IN16
+dato[3] => Mux1.IN16
+dato[3] => Mux2.IN16
+dato[3] => Mux3.IN16
+dato[3] => Mux4.IN16
+dato[3] => Mux5.IN16
+dato[3] => Mux6.IN16
+display[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+display[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+display[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+display[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+display[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+display[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+display[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|circuito_prueba|contador_hex:hex2
+CLK => counter_15:COUNTER.CLK
+hex[0] <= bch:BCH.display[0]
+hex[1] <= bch:BCH.display[1]
+hex[2] <= bch:BCH.display[2]
+hex[3] <= bch:BCH.display[3]
+hex[4] <= bch:BCH.display[4]
+hex[5] <= bch:BCH.display[5]
+hex[6] <= bch:BCH.display[6]
+
+
+|circuito_prueba|contador_hex:hex2|counter_15:COUNTER
+CLK => PS~1.DATAIN
+dato[0] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+dato[1] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+dato[2] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+dato[3] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|circuito_prueba|contador_hex:hex2|BCH:BCH
+dato[0] => Mux0.IN19
+dato[0] => Mux1.IN19
+dato[0] => Mux2.IN19
+dato[0] => Mux3.IN19
+dato[0] => Mux4.IN19
+dato[0] => Mux5.IN19
+dato[0] => Mux6.IN19
+dato[1] => Mux0.IN18
+dato[1] => Mux1.IN18
+dato[1] => Mux2.IN18
+dato[1] => Mux3.IN18
+dato[1] => Mux4.IN18
+dato[1] => Mux5.IN18
+dato[1] => Mux6.IN18
+dato[2] => Mux0.IN17
+dato[2] => Mux1.IN17
+dato[2] => Mux2.IN17
+dato[2] => Mux3.IN17
+dato[2] => Mux4.IN17
+dato[2] => Mux5.IN17
+dato[2] => Mux6.IN17
+dato[3] => Mux0.IN16
+dato[3] => Mux1.IN16
+dato[3] => Mux2.IN16
+dato[3] => Mux3.IN16
+dato[3] => Mux4.IN16
+dato[3] => Mux5.IN16
+dato[3] => Mux6.IN16
+display[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+display[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+display[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+display[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+display[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+display[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+display[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|circuito_prueba|contador_hex:hex3
+CLK => counter_15:COUNTER.CLK
+hex[0] <= bch:BCH.display[0]
+hex[1] <= bch:BCH.display[1]
+hex[2] <= bch:BCH.display[2]
+hex[3] <= bch:BCH.display[3]
+hex[4] <= bch:BCH.display[4]
+hex[5] <= bch:BCH.display[5]
+hex[6] <= bch:BCH.display[6]
+
+
+|circuito_prueba|contador_hex:hex3|counter_15:COUNTER
+CLK => PS~1.DATAIN
+dato[0] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+dato[1] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+dato[2] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+dato[3] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|circuito_prueba|contador_hex:hex3|BCH:BCH
+dato[0] => Mux0.IN19
+dato[0] => Mux1.IN19
+dato[0] => Mux2.IN19
+dato[0] => Mux3.IN19
+dato[0] => Mux4.IN19
+dato[0] => Mux5.IN19
+dato[0] => Mux6.IN19
+dato[1] => Mux0.IN18
+dato[1] => Mux1.IN18
+dato[1] => Mux2.IN18
+dato[1] => Mux3.IN18
+dato[1] => Mux4.IN18
+dato[1] => Mux5.IN18
+dato[1] => Mux6.IN18
+dato[2] => Mux0.IN17
+dato[2] => Mux1.IN17
+dato[2] => Mux2.IN17
+dato[2] => Mux3.IN17
+dato[2] => Mux4.IN17
+dato[2] => Mux5.IN17
+dato[2] => Mux6.IN17
+dato[3] => Mux0.IN16
+dato[3] => Mux1.IN16
+dato[3] => Mux2.IN16
+dato[3] => Mux3.IN16
+dato[3] => Mux4.IN16
+dato[3] => Mux5.IN16
+dato[3] => Mux6.IN16
+display[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+display[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+display[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+display[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+display[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+display[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+display[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|circuito_prueba|contador_hex:hex4
+CLK => counter_15:COUNTER.CLK
+hex[0] <= bch:BCH.display[0]
+hex[1] <= bch:BCH.display[1]
+hex[2] <= bch:BCH.display[2]
+hex[3] <= bch:BCH.display[3]
+hex[4] <= bch:BCH.display[4]
+hex[5] <= bch:BCH.display[5]
+hex[6] <= bch:BCH.display[6]
+
+
+|circuito_prueba|contador_hex:hex4|counter_15:COUNTER
+CLK => PS~1.DATAIN
+dato[0] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+dato[1] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+dato[2] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+dato[3] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|circuito_prueba|contador_hex:hex4|BCH:BCH
+dato[0] => Mux0.IN19
+dato[0] => Mux1.IN19
+dato[0] => Mux2.IN19
+dato[0] => Mux3.IN19
+dato[0] => Mux4.IN19
+dato[0] => Mux5.IN19
+dato[0] => Mux6.IN19
+dato[1] => Mux0.IN18
+dato[1] => Mux1.IN18
+dato[1] => Mux2.IN18
+dato[1] => Mux3.IN18
+dato[1] => Mux4.IN18
+dato[1] => Mux5.IN18
+dato[1] => Mux6.IN18
+dato[2] => Mux0.IN17
+dato[2] => Mux1.IN17
+dato[2] => Mux2.IN17
+dato[2] => Mux3.IN17
+dato[2] => Mux4.IN17
+dato[2] => Mux5.IN17
+dato[2] => Mux6.IN17
+dato[3] => Mux0.IN16
+dato[3] => Mux1.IN16
+dato[3] => Mux2.IN16
+dato[3] => Mux3.IN16
+dato[3] => Mux4.IN16
+dato[3] => Mux5.IN16
+dato[3] => Mux6.IN16
+display[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+display[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+display[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+display[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+display[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+display[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+display[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|circuito_prueba|contador_hex:hex5
+CLK => counter_15:COUNTER.CLK
+hex[0] <= bch:BCH.display[0]
+hex[1] <= bch:BCH.display[1]
+hex[2] <= bch:BCH.display[2]
+hex[3] <= bch:BCH.display[3]
+hex[4] <= bch:BCH.display[4]
+hex[5] <= bch:BCH.display[5]
+hex[6] <= bch:BCH.display[6]
+
+
+|circuito_prueba|contador_hex:hex5|counter_15:COUNTER
+CLK => PS~1.DATAIN
+dato[0] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+dato[1] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+dato[2] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+dato[3] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|circuito_prueba|contador_hex:hex5|BCH:BCH
+dato[0] => Mux0.IN19
+dato[0] => Mux1.IN19
+dato[0] => Mux2.IN19
+dato[0] => Mux3.IN19
+dato[0] => Mux4.IN19
+dato[0] => Mux5.IN19
+dato[0] => Mux6.IN19
+dato[1] => Mux0.IN18
+dato[1] => Mux1.IN18
+dato[1] => Mux2.IN18
+dato[1] => Mux3.IN18
+dato[1] => Mux4.IN18
+dato[1] => Mux5.IN18
+dato[1] => Mux6.IN18
+dato[2] => Mux0.IN17
+dato[2] => Mux1.IN17
+dato[2] => Mux2.IN17
+dato[2] => Mux3.IN17
+dato[2] => Mux4.IN17
+dato[2] => Mux5.IN17
+dato[2] => Mux6.IN17
+dato[3] => Mux0.IN16
+dato[3] => Mux1.IN16
+dato[3] => Mux2.IN16
+dato[3] => Mux3.IN16
+dato[3] => Mux4.IN16
+dato[3] => Mux5.IN16
+dato[3] => Mux6.IN16
+display[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+display[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+display[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+display[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+display[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+display[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+display[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|circuito_prueba|contador_hex:hex6
+CLK => counter_15:COUNTER.CLK
+hex[0] <= bch:BCH.display[0]
+hex[1] <= bch:BCH.display[1]
+hex[2] <= bch:BCH.display[2]
+hex[3] <= bch:BCH.display[3]
+hex[4] <= bch:BCH.display[4]
+hex[5] <= bch:BCH.display[5]
+hex[6] <= bch:BCH.display[6]
+
+
+|circuito_prueba|contador_hex:hex6|counter_15:COUNTER
+CLK => PS~1.DATAIN
+dato[0] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+dato[1] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+dato[2] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+dato[3] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|circuito_prueba|contador_hex:hex6|BCH:BCH
+dato[0] => Mux0.IN19
+dato[0] => Mux1.IN19
+dato[0] => Mux2.IN19
+dato[0] => Mux3.IN19
+dato[0] => Mux4.IN19
+dato[0] => Mux5.IN19
+dato[0] => Mux6.IN19
+dato[1] => Mux0.IN18
+dato[1] => Mux1.IN18
+dato[1] => Mux2.IN18
+dato[1] => Mux3.IN18
+dato[1] => Mux4.IN18
+dato[1] => Mux5.IN18
+dato[1] => Mux6.IN18
+dato[2] => Mux0.IN17
+dato[2] => Mux1.IN17
+dato[2] => Mux2.IN17
+dato[2] => Mux3.IN17
+dato[2] => Mux4.IN17
+dato[2] => Mux5.IN17
+dato[2] => Mux6.IN17
+dato[3] => Mux0.IN16
+dato[3] => Mux1.IN16
+dato[3] => Mux2.IN16
+dato[3] => Mux3.IN16
+dato[3] => Mux4.IN16
+dato[3] => Mux5.IN16
+dato[3] => Mux6.IN16
+display[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+display[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+display[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+display[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+display[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+display[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+display[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|circuito_prueba|contador_hex:hex7
+CLK => counter_15:COUNTER.CLK
+hex[0] <= bch:BCH.display[0]
+hex[1] <= bch:BCH.display[1]
+hex[2] <= bch:BCH.display[2]
+hex[3] <= bch:BCH.display[3]
+hex[4] <= bch:BCH.display[4]
+hex[5] <= bch:BCH.display[5]
+hex[6] <= bch:BCH.display[6]
+
+
+|circuito_prueba|contador_hex:hex7|counter_15:COUNTER
+CLK => PS~1.DATAIN
+dato[0] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+dato[1] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+dato[2] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+dato[3] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|circuito_prueba|contador_hex:hex7|BCH:BCH
+dato[0] => Mux0.IN19
+dato[0] => Mux1.IN19
+dato[0] => Mux2.IN19
+dato[0] => Mux3.IN19
+dato[0] => Mux4.IN19
+dato[0] => Mux5.IN19
+dato[0] => Mux6.IN19
+dato[1] => Mux0.IN18
+dato[1] => Mux1.IN18
+dato[1] => Mux2.IN18
+dato[1] => Mux3.IN18
+dato[1] => Mux4.IN18
+dato[1] => Mux5.IN18
+dato[1] => Mux6.IN18
+dato[2] => Mux0.IN17
+dato[2] => Mux1.IN17
+dato[2] => Mux2.IN17
+dato[2] => Mux3.IN17
+dato[2] => Mux4.IN17
+dato[2] => Mux5.IN17
+dato[2] => Mux6.IN17
+dato[3] => Mux0.IN16
+dato[3] => Mux1.IN16
+dato[3] => Mux2.IN16
+dato[3] => Mux3.IN16
+dato[3] => Mux4.IN16
+dato[3] => Mux5.IN16
+dato[3] => Mux6.IN16
+display[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+display[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+display[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+display[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+display[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+display[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+display[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|circuito_prueba|counter_leds:FSM_LEDS
+CLK => PS~1.DATAIN
+leds[0] <= WideOr7.DB_MAX_OUTPUT_PORT_TYPE
+leds[1] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+leds[2] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+leds[3] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+leds[4] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+leds[5] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+leds[6] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+leds[7] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 
